@@ -1,6 +1,4 @@
-
 import userRoutes from "./routes/userRoutes.js";
-
 
 // pakages
 
@@ -8,7 +6,6 @@ import express from "express";
 import path from "path";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
-
 
 // utils
 
@@ -28,7 +25,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
-app.use("/api/users", userRoutes)
+app.use("/api/users", userRoutes);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
