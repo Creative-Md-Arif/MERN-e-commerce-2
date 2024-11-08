@@ -1,5 +1,5 @@
-// console.log("hello world");
 
+import userRoutes from "./routes/userRoutes.js";
 
 
 // pakages
